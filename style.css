@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.image-generator {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url("642406cd087bb081906eb1b3_Homepage_Hero.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .image-generator::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #121212;
+  }
+  .image-generator .content {
+    position: relative;  /*impressive */
+   color: #fff;
+ padding: 0 15px;
+ max-width: 760px;
+ text-align: center;
+}
+
+.image-generator h1 {
+ font-size: 2.5rem;
+ font-weight: 700;
+}
+
+.image-generator p {
+ margin-top: 10px;
+ font-size: 1.35rem;
+}
+
+.image-generator .generate-form {
+ height: 56px;
+ padding: 6px;
+ display: flex;
+ margin-bottom: 15px;
+ background: #fff;
+ align-items: center;
+ border-radius: 30px;
+ margin-top: 45px;
+ justify-content: space-between;
+}
+
+
+
+.generate-form .prompt-input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 17px;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    border-radius: 30px;
+  }
+ button {
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    height: 100%;
+    padding: 0 25px;
+    border-radius: 30px;
+    background: #4949E7;
+  }
+  #show-more-button{
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    display: none;
+    margin: 30px auto ;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* .generate-form .search-button[disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+  } */
+  
+  .generate-form button:hover {
+    background: #1d1de2;
+  }
+  
+  .search-results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0px auto;
+  margin-top: 37px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background-color: #1f242d;
+   
+  display: flex;
+  justify-content: center;
+  color: antiquewhite
+  }
+  span a{
+    text-decoration: none;
+    text-decoration-line: none;
+    color: aqua;
+  }
+/* background-color: #1f242d;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  color: antiquewhite; */
+
+
+/* .search-results .search-result {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    border-radius: 4px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    width: 285px;
+    margin-top: 58px;
+} */
+.search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.search-result img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  transition : opacity 0.2s ease-in-out;
+} 
+.search-result:hover img{
+  opacity: 0.8;
+}
+
+    
+    .search-result a {
+      font-size: 20px;
+      text-decoration: none;
+      color: #333;
+      display: block;
+      padding: 10px;
+      text-transform: capitalize;
+    }
+
+   @media screen and (max-width: 768px){
+    .search-results{
+        padding: 20px;
+    }
+    .search-result{
+        width: 45%;
+       
+    .image-generator {
+              height: 45vh;
+              padding-top: 30px;
+              align-items: flex-start;
+            }
+          
+            .image-generator h1 {
+              font-size: 1.8rem;
+            }
+          
+            .image-generator p {
+              font-size: 1rem;
+            }
+          
+            .image-generator .generate-form {
+              margin-top: 30px;
+              height: 52px;
+              display: block;
+            }
+
+    }
+  } 
+  @media screen and (max-width: 480px){
+      
+      .search-result{
+          width: 100%;
+        }
+    } 
+    
+        @media screen and (max-width: 440px){
+            .image-generator h1 {
+                font-size: 2rem;
+                font-weight: 700;
+               }
+    }
+        @media screen and (max-width: 400px){
+            .image-generator h1 {
+                font-size: 1.5rem;
+                font-weight: 700;
+               }
+    }
+
+    ::-webkit-scrollbar {
+      background-color: transparent;
+      width: 10px;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      background: linear-gradient(#21D4FD, #B721FF);
+      border-radius: 100px;
+  }
